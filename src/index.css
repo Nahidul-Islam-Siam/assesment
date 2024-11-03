@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Ensure the dropdown is initially hidden */
+#navbar-cta {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Smooth slide-down effect */
+#navbar-cta.max-h-screen {
+  max-height: 100vh; /* Adjust as needed to fit your content */
+}
+
